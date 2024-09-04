@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Face Attendance system</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <nav>
+    <!-- ========== HEADER ========== -->
+    <div class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm mb-4">
+        <div class="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto"
+            aria-label="Global">
+            <div class="flex items-center justify-between">
+                <a class="flex-none text-xl font-semibold" href="./index.html" aria-label="Brand">FaceGuard</a>
+                <div class="md:hidden">
+                    <button type="button" id="menu-toggle-button"
+                        class="size-8 flex justify-center items-center text-sm font-semibold rounded-full border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                        aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                        <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6" />
+                            <line x1="3" x2="21" y1="12" y2="12" />
+                            <line x1="3" x2="21" y1="18" y2="18" />
+                        </svg>
+                        <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+            <div id="navbar-collapse-with-animation"
+                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-end py-2 md:py-0 md:ps-7">
+                    <a class="py-3 ps-px sm:px-3 font-medium text-blue-600" href="./index.html" aria-current="page">Home</a>
+                    <a class="py-3 ps-px sm:px-3 font-medium text-gray-500 hover:text-gray-400" href="./about.html">About</a>
+                    <a class="py-3 ps-px sm:px-3 font-medium text-gray-500 hover:text-gray-400" href="#">Tutorial</a>
+                    <a class="py-3 ps-px sm:px-3 font-medium text-gray-500 hover:text-gray-400" href="#">Blog</a>
+
+
+                    <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 md:border-s md:border-gray-300 py-2 md:py-0 md:my-6 md:ps-6"
+                        href="#">
+                        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<!-- Blog Article -->
+<div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
+  <div class="max-w-2xl">
+    <!-- Avatar Media -->
+    <div class="flex justify-between items-center mb-6">
+      <div class="flex w-full sm:items-center gap-x-5 sm:gap-x-3">
+        <div class="flex-shrink-0">
+          <img class="size-12 rounded-full" src="https://avatars.githubusercontent.com/u/92307408?v=4" alt="Image Description">
+        </div>
+
+        <div class="grow">
+          <div class="flex justify-between items-center gap-x-2">
+            <div>
+              <!-- Tooltip -->
+              <div class=" [--placement:bottom] inline-block">
+                <div class=" sm:mb-1 block text-start cursor-pointer">
+                  <span class="font-semibold text-gray-800">
+                   Kuldeep Sharma
+                  </span>
+
+                
+                </div>
+              </div>
+              <!-- End Tooltip -->
+
+              <ul class="text-xs text-gray-500">
+                <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+                 25 May
+                </li>
+                <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+                  10 min read
+                </li>
+              </ul>
+            </div>
+
+            <!-- Button Group -->
+            <div>
+              <a href="index.html" target="_blank" class="py-1.5 px-2.5 inline-flex bg-black items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  text-gray-50 shadow-sm hover:bg-black/80 disabled:opacity-50 disabled:pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                  <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                  <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                </svg>
+                Home
+                </a>
+              <a href="https://x.com/kuldeepit1" target="_blank" class="py-1.5 px-2.5 inline-flex bg-black items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  text-gray-50 shadow-sm hover:bg-black/80 disabled:opacity-50 disabled:pointer-events-none">
+                <svg class="w-6 h-6" viewBox="0 0 1200 1227"  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"/>
+                  </svg>
+                  
+                Tweet
+                </a>
+            </div>
+            <!-- End Button Group -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Avatar Media -->
+
+    <!-- Content -->
+    <div class="space-y-5 md:space-y-8">
+      <div class="space-y-3">
+        <h2 class="text-2xl font-bold md:text-3xl">Introducing a Privacy-Focused Face Attendance System</h2>
+
+        <p class="text-lg text-gray-800">In this project, our mission has always been centered around prioritizing privacy and security in attendance tracking. We believe that by leveraging cutting-edge technologies such as face-api.js and TensorFlow.js, we can provide a solution where facial data never leaves the system, ensuring utmost confidentiality for users.</p>
+        
+        <p class="text-lg text-gray-800">We're dedicated to fostering a culture of trust and transparency, and we're committed to developing a product that aligns with these principles.</p>
+        
+      <figure>
+        <img class="w-full object-cover rounded-xl" src="https://plus.unsplash.com/premium_photo-1661420386736-df3569904b5d?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
+        <figcaption class="mt-3 text-sm text-center text-gray-500">
+          A man face with virtual art.
+        </figcaption>
+      </figure>
+
+      <p class="text-lg text-gray-800">As we've grown, we've seen how TensorFlow JS has empowered companies such as Google, Airbnb, Twitter, and Spotify to innovate in machine learning and artificial intelligence. We've also learned that when accessible AI tools are integrated early in development, teams can collaborate more effectively and create groundbreaking solutions.</p>
+
+      <p class="text-lg text-gray-800">That's why we are excited to announce the launch of <a class="text-blue-600 decoration-2 hover:underline font-medium" href="#">TensorFlow JS Community Edition</a>, a free version of TensorFlow JS tailored for individual developers, startups, and small teams. Now, anyone can harness the power of machine learning and build intelligent applications with ease.</p>
+      
+      <blockquote class="text-center p-4 sm:px-7">
+          <p class="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal">
+              Utilizing TensorFlow JS has transformed the way we approach AI development. Our projects have seen unprecedented success, and we're just scratching the surface of what's possible.
+          </p>
+          <p class="mt-5 text-gray-800">
+             Kuldeep Sharma
+          </p>
+      </blockquote>
+      
+
+      <figure>
+        <img class="w-full object-cover rounded-xl" src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image Description">
+        <figcaption class="mt-3 text-sm text-center text-gray-500">
+          A woman with virtual data background.
+        </figcaption>
+      </figure>
+
+      <div class="space-y-3">
+        <h3 class="text-2xl font-semibold">Fostering Transparency in Attendance Tracking</h3>
+    
+        <p class="text-lg text-gray-800">We understand the importance of transparency, especially in attendance tracking systems. Our goal is to provide an opportunity for organizations of all sizes to experience the benefits of our face attendance system and witness firsthand how it can revolutionize attendance management. Now, even small teams or individuals can leverage our system to streamline attendance tracking and enhance organizational efficiency.</p>
+    </div>
+    
+    <ul class="list-disc list-outside space-y-5 ps-5 text-lg text-gray-800">
+        <li class="ps-2">Our face attendance system facilitates real-time collaboration and offers an effective way for leadership to stay informed about team activities</a> </li>
+        <li class="ps-2">Implementing the face attendance system has introduced a new level of transparency. It serves as a reliable platform for all stakeholders to access and review attendance data</li>
+    </ul>
+    
+    <p class="text-lg text-gray-800">Small and large organizations alike require a solution that promotes transparency in attendance tracking, enabling seamless communication and collaboration among team members. Our face attendance system facilitates this process, allowing for greater inclusivity and fostering a culture of openness within the organization.</p>
+    
+      <div>
+        <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200" href="#">
+          Face Recognization
+        </a>
+        <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200" href="#">
+          Privacy
+        </a>
+        <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200" href="#">
+         Open source
+        </a>
+        <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200" href="#">
+          On device Ai syatem
+        </a>
+      </div>
+    </div>
+    <!-- End Content -->
+  </div>
+</div>
+<!-- End Blog Article -->
+
+<!-- Sticky Share Group -->
+<div class="sticky bottom-6 inset-x-0 text-center">
+  <div class="inline-block bg-white shadow-md rounded-full py-3 px-4">
+    <div class="flex items-center gap-x-1.5">
+
+      <div class=" relative inline-flex">
+        <button type="button" id="blog-article-share-dropdown" class=" w-full flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800">
+          <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
+          Share
+        </button>
+      </div>
+    
+    </div>
+  </div>
+</div>
+</div>
+<!-- End Sticky Share Group -->
+<!-- footer -->
+<footer class="mt-auto w-full max-w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-black">
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
+      <div>
+          <a class="flex-none text-xl font-semibold text-white" href="index.html" aria-label="Brand">FaceGuard</a>
+      </div>
+      <!-- End Col -->
+
+      <ul class="text-center ">
+          <li
+              class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300">
+              <a class="inline-flex gap-x-2 text-sm text-gray-200 hover:text-gray-100" href="about.html">
+                  About
+              </a>
+          </li>
+          <li
+              class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300">
+              <a class="inline-flex gap-x-2 text-sm text-gray-200 hover:text-gray-100" href="#">
+                  Tutorial
+              </a>
+          </li>
+          <li
+              class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300">
+              <a class="inline-flex gap-x-2 text-sm text-gray-200 hover:text-gray-100" href="#">
+                  Blog
+              </a>
+          </li>
+      </ul>
+      <!-- End Col -->
+
+      <!-- Social Brands -->
+      <div class="md:text-end space-x-2">
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+              href="https://hytek.org.in" target="_blank">
+              <img src="/assets/hytek.png" class="rounded-full w-4 h-4" alt="hytek website logo">
+          </a>
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+              href="https://x.com/kuldeepit1" target="_blank">
+              <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg>
+          </a>
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+              href="https://github.com/kuldeepsharma1/Face-attendance-system.git" target="_blank">
+              <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+          </a>
+
+      </div>
+      <!-- End Social Brands -->
+  </div>
+  <!-- End Grid -->
+  <div
+      class="mt-6 md:mt-12 py-3 flex items-center text-sm text-gray-800 gap-x-1.5 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:after:border-neutral-700">
+      <span
+          class="font-semibold bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">created
+          by</span>
+      <div class="inline-flex flex-row space-x-2"> <a target="_blank" class="hover:underline" href="https://github.com/kuldeepsharma1">
+              kuldeep sharma</a>
+          <a class="hover:underline" target="_blank" href="https://github.com/Chan-d-an">chandan kumar</a>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
